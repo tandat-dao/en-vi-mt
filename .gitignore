@@ -3,3 +3,7 @@ data/processed/
 *.pt
 *.bin
 __pycache__/
+.DS_Store
+.ipynb_checkpoints/
+.venv/
+.env
