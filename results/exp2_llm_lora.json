@@ -1,0 +1,27 @@
+{
+  "model": "google/gemma-2-2b-it + QLoRA",
+  "bleu": 32.78874757943277,
+  "hyperparameters": {
+    "lora_r": 16,
+    "lora_alpha": 16,
+    "lora_dropout": 0.05,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ],
+    "learning_rate": 0.0002,
+    "max_steps": 3000,
+    "batch_size": "4 x 4 (gradient accumulation)",
+    "quantization": "4-bit NF4",
+    "max_seq_length": 256,
+    "warmup_steps": 100,
+    "optimizer": "paged_adamw_32bit"
+  },
+  "dataset": "iwslt15_cleaned",
+  "test_samples": 1246
+}
