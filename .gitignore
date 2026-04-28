@@ -1,9 +1,24 @@
+# ── Data ──────────────────────────────────────────
 data/raw/
 data/processed/
+
+# ── Model checkpoints & weights ───────────────────
 *.pt
 *.bin
+*.safetensors
+results-encoder-decoder/
+results-llm-lora/
+gemma-2b-en-vi-lora/
+
+# ── Python ────────────────────────────────────────
 __pycache__/
-.DS_Store
-.ipynb_checkpoints/
 .venv/
 .env
+
+# ── Jupyter ───────────────────────────────────────
+.ipynb_checkpoints/
+
+# ── IDE & OS ──────────────────────────────────────
+.vscode/
+.claude/
+.DS_Store

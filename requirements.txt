@@ -1,5 +1,20 @@
-datasets==4.8.4
-pandas==3.0.2
-matplotlib==3.10.8
-seaborn==0.13.2
+# ── Core ──────────────────────────────────────────
+torch>=2.0
+transformers>=4.40
+datasets>=3.0
+sacrebleu>=2.3
+sentencepiece>=0.1.99
+
+# ── Experiment 2: QLoRA / LLM ────────────────────
+peft>=0.10
+trl>=0.8
+bitsandbytes>=0.43
+accelerate>=0.30
+
+# ── Data analysis (Notebook 01) ──────────────────
+pandas>=2.0
+matplotlib>=3.7
+seaborn>=0.13
+
+# ── Notebook environment ─────────────────────────
 jupyter
