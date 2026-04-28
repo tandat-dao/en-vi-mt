@@ -1,0 +1,16 @@
+{
+  "model": "Helsinki-NLP/opus-mt-en-vi",
+  "baseline_bleu": 29.759035399774135,
+  "finetuned_bleu": 37.30221368551367,
+  "improvement": 7.543178285739536,
+  "hyperparameters": {
+    "learning_rate": 2e-05,
+    "epochs": 3,
+    "batch_size": 16,
+    "max_length": 128,
+    "weight_decay": 0.01,
+    "fp16": true
+  },
+  "dataset": "iwslt15_cleaned",
+  "test_samples": 1246
+}
